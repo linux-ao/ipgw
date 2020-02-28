@@ -1,0 +1,40 @@
+#!/bin/bash
+# Information: Script manager gateway default parametres
+# Version: 0.0.1
+# Autors:
+#       ASRD    - Alex Dias - alex@linux
+
+
+ARG=$1
+IP=$2
+
+add()
+{
+        IP=$1
+        route add default gw $IP
+        show
+}
+
+del()
+{
+        IP=$1
+        route del default gw $IP
+        show
+}
+
+show()
+{
+        route -n
+}
+
+case $ARG in
+	add)
+		add $IP
+		;;
+	del)
+		del $IP
+		;;
+	*)
+		show
+		;;
+esac

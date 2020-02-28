@@ -1,0 +1,14 @@
+Package:ipgw
+Version: 0.1
+Priority:
+Architecture: all
+Essential:
+Depends:
+Pre-depends:
+Suggests:
+Installed-Size:
+Maintainer: ASRD
+Conflicts:
+Replaces:
+Provides:
+Description: Command for manager default gateway
